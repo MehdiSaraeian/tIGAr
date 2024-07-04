@@ -24,7 +24,7 @@ from numpy import full
 from numpy import transpose as npTranspose
 from numpy import arange
 
-import ufl.equation
+import ufl_legacy.equation
 
 #from dolfin import MPI, mpi_comm_world
 
@@ -1274,7 +1274,7 @@ class ExtractedSpline(object):
         as a DOLFIN ``PETScVector``.  
         """
         
-        if(isinstance(residualForm,ufl.equation.Equation)):
+        if(isinstance(residualForm,ufl_legacy.equation.Equation)):
             lhsForm = residualForm.lhs
             rhsForm = residualForm.rhs
         else:

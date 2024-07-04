@@ -8,7 +8,7 @@ implementing demos.
 
 from tIGAr.common import *
 from tIGAr.calculusUtils import getQuadRule
-from ufl import shape, rank
+from ufl_legacy import shape, rank
 
 class BackwardEulerIntegrator:
 
